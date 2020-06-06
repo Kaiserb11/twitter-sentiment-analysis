@@ -11,6 +11,8 @@ from sklearn.feature_extraction.text import TfidfTransformer
 file = "E:/github_desktop/twitter-sentiment-analysis/dataset/train.csv"
 data = pd.read_csv(file, sep=',', encoding = 'utf8')
 
+#shit load of preprocessing...
+
 sent = data['original_text']
 sent = [i.lower() for i in sent]
 common_words = stopwords.words('english')
